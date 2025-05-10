@@ -13,8 +13,8 @@
     #urlbar[breakout-extend="true"] #urlbar-background {
       background-color: color-mix(
         in hsl,
-        var(--mod-cleanedurlbar-customdarkcolor),
-        transparent var(--mod-cleanedurlbar-customtransparency)
+        var(--mod-cleanedurlbar-customdarkcolor) var(--mod-cleanedurlbar-customtransparency),
+        transparent
       ) !important;
     }
   }
@@ -23,8 +23,8 @@
     #urlbar[breakout-extend="true"] #urlbar-background {
       background-color: color-mix(
         in hsl,
-        var(--mod-cleanedurlbar-customlightcolor),
-        transparent var(--mod-cleanedurlbar-customtransparency)
+        var(--mod-cleanedurlbar-customlightcolor) var(--mod-cleanedurlbar-customtransparency),
+        transparent
       ) !important;
     }
   }

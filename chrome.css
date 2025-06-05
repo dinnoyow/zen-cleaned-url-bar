@@ -8,7 +8,7 @@
   #urlbar[breakout-extend="true"] #urlbar-background {
     backdrop-filter: blur(25px) !important;
   }
-  
+
   @media (prefers-color-scheme: dark) {
     #urlbar[breakout-extend="true"] #urlbar-background {
       background-color: color-mix(
@@ -27,6 +27,11 @@
         transparent var(--mod-cleanedurlbar-customtransparency)
       ) !important;
     }
+  }
+
+  /* Fixes missing blur effect */
+  .browserStack browser {
+    transform: translateX(0) !important;
   }
 
   /* Custom URL result selected color */

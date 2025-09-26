@@ -1,16 +1,16 @@
 @-moz-document url-prefix("chrome:") {
   /* Blurs the background */
-  #urlbar[breakout-extend="true"] #urlbar-background {
+  #urlbar[breakout-extend="true"] .urlbar-background {
     border-radius: 15px !important;
     border: solid 3px color-mix(in hsl, hsl(0 0 50), transparent 90%) !important;
   }
 
-  #urlbar[breakout-extend="true"] #urlbar-background {
+  #urlbar[breakout-extend="true"] .urlbar-background {
     backdrop-filter: blur(25px) !important;
   }
   
   @media (prefers-color-scheme: dark) {
-    #urlbar[breakout-extend="true"] #urlbar-background {
+    #urlbar[breakout-extend="true"] .urlbar-background {
       background-color: color-mix(
         in hsl,
         var(--mod-cleanedurlbar-customdarkcolor),
@@ -20,7 +20,7 @@
   }
 
   @media (prefers-color-scheme: light) {
-    #urlbar[breakout-extend="true"] #urlbar-background {
+    #urlbar[breakout-extend="true"] .urlbar-background {
       background-color: color-mix(
         in hsl,
         var(--mod-cleanedurlbar-customlightcolor),

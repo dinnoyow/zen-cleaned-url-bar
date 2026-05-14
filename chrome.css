@@ -1,4 +1,12 @@
 @-moz-document url-prefix("chrome:") {
+
+  /* Workaround: Firefox 150+ / Zen 1.19.9b+ broke backdrop-filter on child
+     elements by removing the stacking context from #browser. Re-establishing
+     a no-op backdrop-filter on a parent element restores the behaviour. */
+  #browser {
+    backdrop-filter: blur(0) !important;
+  }
+
   /* Blurs the background */
   #urlbar[breakout-extend="true"] #urlbar-background {
     border-radius: 15px !important;
